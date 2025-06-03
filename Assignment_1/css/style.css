@@ -1,0 +1,113 @@
+
+:root{
+    --blue: #5050ff;
+    --yellow: #f0f03d;
+    --noun1: #b400b4;
+    --verb: #87ceeb;
+    --adj: #00b600;
+    --noun2: #ffa500;
+    --location: #ff98a9;
+    --submit: #00b0b0;
+    --random: #dc143c;
+    --storyBox: #baba1f;
+    --textColour: #040404;
+    --accentColour: #f3f3f3;
+}
+
+html, button{
+    color: var(--textColour);
+}
+
+body{
+    background-color: var(--blue);
+}
+
+main{
+    width: 80%;
+    margin: 0 10%;
+    background-color: var(--yellow);
+    padding: 0 10px 10px;
+    border-radius: 10px;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+#partContainer, #listButtonContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+#storyButtonContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 2em;
+    width: 5em;
+    border-radius: 10px;
+}
+li{
+    text-align: center;
+}
+
+#nounList1, #noun1Button{
+    background-color: var(--noun1);
+    border-color: var(--noun1);
+}
+#verbList, #verbButton{
+    background-color: var(--verb);
+    border-color: var(--verb);
+}
+#adjectiveList, #adjectiveButton{
+    background-color: var(--adj);
+    border-color: var(--adj);
+}
+#nounList2, #noun2Button{
+    background-color: var(--noun2);
+    border-color: var(--noun2);
+}
+#locationList, #locationButton{
+    background-color: var(--location);
+    border-color: var(--location);
+}
+
+#submitStory{
+    background-color: var(--submit);
+    border-color: var(--submit);
+}
+#randomStory{
+    background-color: var(--random);
+    border-color: var(--random);
+}
+
+.listNumber{
+    padding: 10px;
+    border: var(--accentColour) solid 2px;
+    border-radius: 50%;
+}
+
+button{
+    border-radius: 50%;
+    padding: 1em;
+    margin: 1em;
+}
+
+#storyOutput{
+    background-color: var(--storyBox);
+    width: 80%;
+    margin: 10px 10%;
+    padding: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
